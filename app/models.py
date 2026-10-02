@@ -33,7 +33,7 @@ class Color(models.Model):
         verbose_name = 'color'
         verbose_name_plural = 'colors'
 
-    title = models.CharField('name')
+    title = models.CharField('name', max_length=100)
 
 
     def __str__(self):

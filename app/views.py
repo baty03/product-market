@@ -9,4 +9,5 @@ def index(request):
         'products': products
     })
 
+
 # Create your views here.

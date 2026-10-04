@@ -19,7 +19,7 @@ class Product(models.Model):
     description = models.TextField('description')
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    image = models.ImageField('img', upload_to='media/')
+    image = models.ImageField('img', upload_to='image/')
     color = models.ManyToManyField('Color', verbose_name='color')
     date = models.DateField('date')
     end_date = models.DateField('end_date')

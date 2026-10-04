@@ -10,6 +10,6 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ['id', 'name', 'category', 'price', 'end_date']
     list_display_links = ['id', 'name']
     list_filter = ['price', 'date', 'end_date', 'category']
-    search_fields = ['name', 'description', 'category_title']
+    search_fields = ['name', 'description', 'category__title']
 
 # Register your models here.

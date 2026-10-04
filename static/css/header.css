@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background: rgb(7, 212, 7);
+    height: 100px;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px 0 60px;
+}
+
+.logo2{
+    color: white;
+}
+
+.navbar{
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}

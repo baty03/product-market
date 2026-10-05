@@ -1,12 +1,48 @@
 {% extends "main/base.html" %}
-
 {% block content %}
 
-{% for product in products %}
-    <h2>{{ product.name }}</h2>
-    <img src="{{ product.image.url }}" alt="{{ product.name }}">
-    <p>{{ product.description }}</p>
-    <p>{{ product.price }}</p>
-{% endfor %}
+    <div class="product-information">
+
+        <div class="product-text2">
+            <h1>Store information</h1>
+            <p>Grocery store, open 24/7. The freshest products.</p>
+            <p>the freshest products are only available from us</p>
+            <a href="/catalog" class="info-button">Read more</a>
+        </div>
+
+        <div class="info-img">
+
+            <img src="{% static 'images-fon/banana.png' %}" alt="banana">
+
+        </div>
+
+    </div>
+
+    <div class="products-title">
+        <h1>Наши продукты</h1>
+        <p>Свежие продукты каждый день</p>
+    </div>
+
+<div class="products">
+
+    {% for product in products %}
+
+    <div class="product">
+
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+
+        <h2>{{ product.name }}</h2>
+
+        <p>{{ product.description }}</p>
+
+        <p class="price">{{ product.price }} сом</p>
+
+        <a href="#" class="product-button">Подробнее</a>
+
+    </div>
+
+    {% endfor %}
+
+</div>
 
 {% endblock %}

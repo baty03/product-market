@@ -1,31 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.header{
-    background: rgb(7, 212, 7);
+.header {
+    background: rgb(1, 222, 1);
     height: 100px;
 }
 
-.nav{
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 60px 0 60px;
 }
 
-.logo2{
+.logo2 {
     color: white;
 }
 
-.navbar{
+.navbar {
     font-size: 24px;
 }
 
-a{
+.navbar a {
     text-decoration: none;
     color: white;
     margin-right: 20px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
 }

@@ -1,10 +1,49 @@
-.footer{
-    height: 200px;
-    background: rgb(176, 31, 31);
+.footer {
+    min-height: 200px;
+    background: rgb(124, 124, 124);
+    color: white;
+    padding: 30px 60px;
 }
 
-
-h1{
-    color: rgb(242, 217, 217);
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo h1 {
+    color: white;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-navigation h2 {
+    margin: 0 0 10px;
+}
+
+.footer-navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.footer-navigation a:hover {
+    text-decoration: underline;
+}
+
+.contacts h2 {
+    margin: 0 0 10px;
+}
+
+.contacts p {
+    margin: 5px 0;
+}
